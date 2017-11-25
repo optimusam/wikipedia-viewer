@@ -9,6 +9,7 @@ randbtn.addEventListener("click", function() {
 });
 
 function getResults() {
+    result_box.classList.remove('slide');
     result_box.textContent="";
     q = search_box.value;
     var request = new XMLHttpRequest();
@@ -19,6 +20,7 @@ function getResults() {
         for(var el of query_result) {
            result_box.insertAdjacentHTML("beforeend", "<a href=http://en.wikipedia.org/?curid=" + el.pageid + " target='_blank'><div><p class='search-title'>" + el.title + "</p><p class='snippet'>"+el.extract+"</p></div></a>")
         }
+        result_box.classList.add('slide');
     }
     request.send();
 }
