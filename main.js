@@ -8,7 +8,7 @@ randbtn.addEventListener("click", function() {
     window.open("https://en.wikipedia.org/wiki/Special:Random", "_blank");
 });
 
-function getResults() {
+function getResults(e) {
     result_box.classList.remove('slide');
     result_box.textContent="";
     q = search_box.value;
@@ -23,4 +23,5 @@ function getResults() {
         result_box.classList.add('slide');
     }
     request.send();
+    e.preventDefault();
 }
