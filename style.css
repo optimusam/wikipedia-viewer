@@ -1,24 +1,27 @@
+html {
+    margin: 0;
+    padding: 0;
+}
 body {
     background:rgb(41, 92, 122);
     color: white;
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
 }
-
 .container {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
 }
 .search {
     width: 100%;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
-#randbtn {
-    right: 25%;
-}
+
 h1 {
     font-size: 4rem;
-    margin: 5vh 1rem 1rem 1rem;
+    margin: 5vh 0;
     text-align: center;
 }
 .btn {
@@ -34,16 +37,22 @@ h1 {
 .btn:focus {
     outline: none;
 }
+.search{
+    margin:0 auto;
+    width: 90%;
+}
 
 #query {
     color: rgb(36, 83, 128);
     width: 100%;
     padding: 1rem;
-    margin: 1rem;
+    margin: 0.5rem 0;
     border: none;
     border-radius: 20px;
     text-align: center;
-    clear: both;
+}
+#query:focus {
+    outline: none;
 }
 
 #resultelem > a{
@@ -65,6 +74,9 @@ h1 {
 
 #resultelem > a > div .search-title {
     color: rgb(102, 85, 54);
+}
+#resultelem > p {
+    font-size: 1.5rem;
 }
 .slide {
     animation-name: slideup;
