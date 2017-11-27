@@ -68,7 +68,7 @@ h1 {
 }
 .slide {
     animation-name: slideup;
-    animation-duration: 400ms;
+    animation-duration: 500ms;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
